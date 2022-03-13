@@ -7,7 +7,24 @@ Add copy button to your prismjs' code blocks.
 ## How to install
 
 ```shell
-npm install --save gatsby-remark-prismjs-copy-button
+npm install --save gatsby-transformer-remark gatsby-remark-prismjs gatsby-remark-prismjs-copy-button
+```
+
+## How to use
+
+Add it to `gatsby-config.js`:
+
+```javascript
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-prismjs`, `gatsby-remark-prismjs-copy-button`],
+      },
+    },
+  ],
+};
 ```
 
 ## How to contribute
