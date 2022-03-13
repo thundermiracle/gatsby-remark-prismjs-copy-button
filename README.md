@@ -2,7 +2,7 @@
 
 Add copy button to your prismjs' code blocks.
 
-![copy-button-preview](./assets/copy-preview.mov)
+![copy-button-preview](./assets/copy-preview.gif)
 
 ## How to install
 
