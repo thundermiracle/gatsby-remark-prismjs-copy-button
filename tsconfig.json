@@ -1,0 +1,9 @@
+{
+  "extends": "@web-configs/typescript/library.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "./",
+    "noImplicitAny": false
+  },
+  "include": ["./src/**/*.ts"]
+}

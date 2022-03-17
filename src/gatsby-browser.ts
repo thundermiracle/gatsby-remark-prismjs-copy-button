@@ -1,6 +1,6 @@
-require('./styles.css');
+import './styles.css';
 
-exports.onClientEntry = () => {
+export const onClientEntry = () => {
   window.gatsbyRemarkCopyToClipboard = async (str, copyButtonDom) => {
     if (copyButtonDom.textContent === 'Copied') {
       return;
@@ -14,7 +14,7 @@ exports.onClientEntry = () => {
       setTimeout(() => {
         copyButtonDom.classList.remove('copied');
         copyButtonDom.textContent = 'Copy';
-        resolve();
+        resolve('done');
       }, 1500);
     });
   };

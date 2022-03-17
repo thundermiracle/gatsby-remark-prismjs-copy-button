@@ -1,8 +1,8 @@
-const visit = require('unist-util-visit');
+import { visit } from 'unist-util-visit';
 
 const COPY_BUTTON_ADDED = 'copy-button-added-';
 
-module.exports = function gatsbyRemarkPrismCopyButton(
+export default function gatsbyRemarkPrismCopyButton(
   { markdownAST },
   {
     buttonContainerClass: customButtonContainerClass,
@@ -27,7 +27,7 @@ module.exports = function gatsbyRemarkPrismCopyButton(
       .filter(Boolean)
       .join(' ');
 
-    let code = parent.children[index].value;
+    let code = parent.children[index || 0].value;
     code = code
       .replace(/"/gm, '&quot;')
       .replace(/`/gm, '\\`')
@@ -50,4 +50,4 @@ module.exports = function gatsbyRemarkPrismCopyButton(
   });
 
   return markdownAST;
-};
+}

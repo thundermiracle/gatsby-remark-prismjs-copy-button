@@ -1,16 +1,34 @@
 {
   "name": "gatsby-remark-prismjs-copy-button",
   "description": "Gatsby plugin to add copy button to Remark code block",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "ThunderMiracle",
+  "license": "MIT",
+  "main": "index.js",
   "bugs": {
     "url": "https://github.com/thundermiracle/gatsby-remark-prismjs-copy-button/issues"
   },
-  "dependencies": {
-    "unist-util-visit": "2.0.3"
+  "scripts": {
+    "build": "tsup && cp -r package.json README.md LICENSE assets dist",
+    "lint": "eslint ./src",
+    "type-check": "tsc --noEmit",
+    "test": "npm run lint && npm run type-check"
   },
+  "peerDependencies": {
+    "gatsby": "^3.0.0 || ^4.0.0"
+  },
+  "dependencies": {},
   "devDependencies": {
-    "@web-configs/prettier": "0.1.1"
+    "@web-configs/eslint-plugin": "0.2.1",
+    "@web-configs/prettier": "0.1.1",
+    "@web-configs/typescript": "0.1.1",
+    "autoprefixer": "10.4.4",
+    "eslint": "8.11.0",
+    "postcss": "8.4.12",
+    "prettier": "2.6.0",
+    "tsup": "5.12.1",
+    "typescript": "4.6.2",
+    "unist-util-visit": "^4.1.0"
   },
   "homepage": "https://github.com/thundermiracle/gatsby-remark-prismjs-copy-button/",
   "keywords": [
@@ -18,20 +36,15 @@
     "gatsby-plugin",
     "remark",
     "copy",
-    "code"
+    "code",
+    "prismjs"
   ],
-  "license": "MIT",
-  "main": "index.js",
-  "peerDependencies": {
-    "gatsby": "^3.0.0 || ^4.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/thundermiracle/gatsby-remark-prismjs-copy-button.git"
   },
-  "scripts": {},
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=12.0.0"
   },
   "prettier": "@web-configs/prettier"
 }
