@@ -1,5 +1,7 @@
 # gatsby-remark-prismjs-copy-button
 
+[![npm version](https://badge.fury.io/js/gatsby-remark-prismjs-copy-button.svg)](https://badge.fury.io/js/gatsby-remark-prismjs-copy-button)
+
 Add copy button to your prismjs' code blocks.
 
 ![copy-button-preview](./assets/copy-preview.gif)
