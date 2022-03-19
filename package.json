@@ -5,6 +5,7 @@
   "author": "ThunderMiracle",
   "license": "MIT",
   "main": "index.js",
+  "packageManager": "pnpm@6.32.3",
   "bugs": {
     "url": "https://github.com/thundermiracle/gatsby-remark-prismjs-copy-button/issues"
   },
