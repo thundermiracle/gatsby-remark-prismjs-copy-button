@@ -1,7 +1,7 @@
 {
   "name": "gatsby-remark-prismjs-copy-button",
   "description": "Gatsby plugin to add copy button to Remark code block",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "ThunderMiracle",
   "license": "MIT",
   "main": "index.js",
