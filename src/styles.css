@@ -18,6 +18,11 @@
   transition: background-color 0.2s ease-in-out;
   color: rgba(255, 255, 255, 0.88);
 }
+@media (max-width: 600px) {
+  .gatsby-remark-prismjs-copy-button {
+    background: rgb(255, 167, 196);
+  }
+}
 .gatsby-remark-prismjs-copy-button:hover {
   background: rgb(255, 167, 196);
 }
