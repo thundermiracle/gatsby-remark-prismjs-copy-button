@@ -1,6 +1,6 @@
 interface Window {
   gatsbyRemarkCopyToClipboard: (
-    str: string,
     copyButtonDom: HTMLElement,
+    codeBlockDom: HTMLElement,
   ) => Promise<void>;
 }

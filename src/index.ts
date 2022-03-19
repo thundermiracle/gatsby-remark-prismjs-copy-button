@@ -27,17 +27,11 @@ export default function gatsbyRemarkPrismCopyButton(
       .filter(Boolean)
       .join(' ');
 
-    let code = parent.children[index || 0].value;
-    code = code
-      .replace(/"/gm, '&quot;')
-      .replace(/`/gm, '\\`')
-      .replace(/\$/gm, '\\$');
-
     const buttonNode = {
       type: 'html',
       value: `
           <div class="${buttonContainerClass}">
-            <div class="${buttonClass}" tabindex="0" role="button" aria-pressed="false" onclick="gatsbyRemarkCopyToClipboard(\`${code}\`, this)">
+            <div class="${buttonClass}" tabindex="0" role="button" aria-pressed="false" onclick="gatsbyRemarkCopyToClipboard(this, this.parentNode.nextElementSibling)">
               Copy
             </div>
           </div>
