@@ -1,11 +1,11 @@
 import './styles.css';
 
 export const onClientEntry = () => {
-  window.gatsbyRemarkCopyToClipboard = async (str, copyButtonDom) => {
+  window.gatsbyRemarkCopyToClipboard = async (copyButtonDom, codeBlockDom) => {
     if (copyButtonDom.textContent === 'Copied') {
       return;
     }
-    navigator.clipboard.writeText(str);
+    navigator.clipboard.writeText(codeBlockDom.textContent || '');
 
     copyButtonDom.classList.add('copied');
     copyButtonDom.textContent = 'Copied!';
