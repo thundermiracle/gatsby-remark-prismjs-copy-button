@@ -8,8 +8,14 @@
   "bugs": {
     "url": "https://github.com/thundermiracle/gatsby-remark-prismjs-copy-button/issues"
   },
+  "files": [
+    "index.js",
+    "index.js.map",
+    "gatsby-browser.js",
+    "gatsby-browser.js.map"
+  ],
   "scripts": {
-    "build": "tsup && cp -r package.json README.md LICENSE assets dist",
+    "build": "tsup",
     "lint": "eslint ./src",
     "type-check": "tsc --noEmit",
     "test": "npm run lint && npm run type-check"

@@ -1,2 +1,5 @@
 node_modules
-dist
+
+# ignore build output
+gatsby-browser.js*
+index.js*
