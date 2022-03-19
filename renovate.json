@@ -1,5 +1,17 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    "schedule:monthly",
+    "group:allNonMajor",
+    "group:gatsbyMonorepo",
+    "group:linters"
+  ],
+  "rebaseWhen": "conflicted",
+  "labels": [
+    "dependencies"
+  ],
+  "rangeStrategy": "bump",
+  "ignoreDeps": [
+    "node"
   ]
 }
