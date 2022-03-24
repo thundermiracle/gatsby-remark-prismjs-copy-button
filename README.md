@@ -4,7 +4,11 @@
 
 Add copy button to your prismjs' code blocks.
 
-![copy-button-preview](./assets/copy-preview.gif)
+![copy-button-preview](https://raw.githubusercontent.com/thundermiracle/gatsby-remark-prismjs-copy-button/HEAD/assets/copy-preview.gif)
+
+## How to make it work
+
+[https://thundermiracle.com/blog/en/2022-03-13-gatsby-add-copy-button-to-code-block/](https://thundermiracle.com/blog/en/2022-03-13-gatsby-add-copy-button-to-code-block/)
 
 ## How to install
 
@@ -16,13 +20,15 @@ npm install --save gatsby-transformer-remark gatsby-remark-prismjs gatsby-remark
 
 Add it to `gatsby-config.js`:
 
+※ **NOTE:** You _MUST_ add `gatsby-remark-prismjs-copy-button` before `gatsby-remark-prismjs`, as `gatsby-remark-prismjs` will transform Code MarkdownASTs to HTML. So `gatsby-remark-prismjs-copy-button` will unable to find the Code MarkdownASTs to add copy button.
+
 ```javascript
 module.exports = {
   plugins: [
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-prismjs`, `gatsby-remark-prismjs-copy-button`],
+        plugins: [`gatsby-remark-prismjs-copy-button`, `gatsby-remark-prismjs`],
       },
     },
   ],
