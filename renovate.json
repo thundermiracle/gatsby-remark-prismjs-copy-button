@@ -6,6 +6,7 @@
     "group:gatsbyMonorepo",
     "group:linters"
   ],
+  "automerge": true,
   "rebaseWhen": "conflicted",
   "labels": [
     "dependencies"
