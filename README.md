@@ -18,22 +18,43 @@ npm install --save gatsby-transformer-remark gatsby-remark-prismjs gatsby-remark
 
 ## How to use
 
-Add it to `gatsby-config.js`:
+1. Add it to `gatsby-config.js`:
 
-※ **NOTE:** You _MUST_ add `gatsby-remark-prismjs-copy-button` before `gatsby-remark-prismjs`, as `gatsby-remark-prismjs` will transform Code MarkdownASTs to HTML. So `gatsby-remark-prismjs-copy-button` will unable to find the Code MarkdownASTs to add copy button.
+   ※ **NOTE:** You _MUST_ add `gatsby-remark-prismjs-copy-button` before `gatsby-remark-prismjs`, as `gatsby-remark-prismjs` will transform Code MarkdownASTs to HTML. So `gatsby-remark-prismjs-copy-button` will unable to find the Code MarkdownASTs to add copy button.
 
-```javascript
-module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [`gatsby-remark-prismjs-copy-button`, `gatsby-remark-prismjs`],
-      },
-    },
-  ],
-};
-```
+   ```javascript
+   module.exports = {
+     plugins: [
+       {
+         resolve: `gatsby-transformer-remark`,
+         options: {
+           plugins: [
+             `gatsby-remark-prismjs-copy-button`,
+             `gatsby-remark-prismjs`,
+           ],
+         },
+       },
+     ],
+   };
+   ```
+
+2. In your template.js.
+
+   ```javascript
+   export const query = graphql`
+     query ($slug: String!) {
+       markdownRemark(fields: { slug: { eq: $slug } }) {
+         html
+       }
+     }
+   `;
+
+   export default function Template({ data }) {
+     return (
+       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+     );
+   }
+   ```
 
 ## How to contribute
 
