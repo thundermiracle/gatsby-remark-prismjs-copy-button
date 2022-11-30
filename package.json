@@ -30,7 +30,7 @@
     "@web-configs/prettier": "0.1.2",
     "@web-configs/typescript": "0.2.2",
     "autoprefixer": "10.4.13",
-    "eslint": "8.26.0",
+    "eslint": "8.28.0",
     "postcss": "8.4.19",
     "prettier": "2.8.0",
     "tsup": "6.5.0",
