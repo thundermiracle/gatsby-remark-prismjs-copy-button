@@ -56,6 +56,17 @@ npm install --save gatsby-transformer-remark gatsby-remark-prismjs gatsby-remark
    }
    ```
 
+3. Overwrite the style of the copy button.
+
+   You can overwrite the style of the copy button by adding the following class to your own `style.css`.
+
+   ```css
+   .gatsby-remark-prismjs-copy-button-container {
+     left: 0;
+     padding-right: 8px;
+   }
+   ```
+
 ## How to contribute
 
 If you have unanswered questions, would like help with enhancing or debugging the plugin, it is nice to include instructions for people who want to contribute to your plugin.
