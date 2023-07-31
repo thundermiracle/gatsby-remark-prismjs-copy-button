@@ -7,19 +7,19 @@ specifiers:
   autoprefixer: 10.4.14
   eslint: 8.46.0
   postcss: 8.4.27
-  prettier: 2.8.8
+  prettier: 3.0.0
   tsup: 6.7.0
   typescript: 4.9.5
   unist-util-visit: ^4.1.2
 
 devDependencies:
-  '@web-configs/eslint-plugin': 0.5.1_uqbwjp42xgq5cbc7ebeaxt2k4y
+  '@web-configs/eslint-plugin': 0.5.1_xhqygmiyyc4nk6dncvdc6kljee
   '@web-configs/prettier': 0.1.2
   '@web-configs/typescript': 0.2.2
   autoprefixer: 10.4.14_postcss@8.4.27
   eslint: 8.46.0
   postcss: 8.4.27
-  prettier: 2.8.8
+  prettier: 3.0.0
   tsup: 6.7.0_qb3pbod2my25q27xvrg5quogyy
   typescript: 4.9.5
   unist-util-visit: 4.1.2
@@ -1011,7 +1011,7 @@ packages:
       eslint-visitor-keys: 3.4.1
     dev: true
 
-  /@web-configs/eslint-plugin/0.5.1_uqbwjp42xgq5cbc7ebeaxt2k4y:
+  /@web-configs/eslint-plugin/0.5.1_xhqygmiyyc4nk6dncvdc6kljee:
     resolution: {integrity: sha512-MCwwGC4fTDTsitKnlxZDL0LYP+ak2d88YvGCQb31iRnmCtvm5gfCavfzICsnYlndrKhR3mVRKqXkFd8mcwqhow==}
     peerDependencies:
       eslint: ^8.42.0
@@ -1034,7 +1034,7 @@ packages:
       eslint-plugin-jest-formatting: 3.1.0_eslint@8.46.0
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.46.0
       eslint-plugin-node: 11.1.0_eslint@8.46.0
-      eslint-plugin-prettier: 4.2.1_yc3bkypch2klsxaymefahf4d5a
+      eslint-plugin-prettier: 4.2.1_tt5tguecxzqpbyv5uxe66zidee
       eslint-plugin-promise: 6.1.1_eslint@8.46.0
       eslint-plugin-react: 7.32.2_eslint@8.46.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.46.0
@@ -1926,6 +1926,23 @@ packages:
       minimatch: 3.1.2
       resolve: 1.22.2
       semver: 6.3.0
+    dev: true
+
+  /eslint-plugin-prettier/4.2.1_tt5tguecxzqpbyv5uxe66zidee:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      eslint: '>=7.28.0'
+      eslint-config-prettier: '*'
+      prettier: '>=2.0.0'
+    peerDependenciesMeta:
+      eslint-config-prettier:
+        optional: true
+    dependencies:
+      eslint: 8.46.0
+      eslint-config-prettier: 8.8.0_eslint@8.46.0
+      prettier: 3.0.0
+      prettier-linter-helpers: 1.0.0
     dev: true
 
   /eslint-plugin-prettier/4.2.1_yc3bkypch2klsxaymefahf4d5a:
@@ -3210,6 +3227,12 @@ packages:
   /prettier/2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
+
+  /prettier/3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
