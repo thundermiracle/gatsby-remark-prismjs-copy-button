@@ -5,7 +5,7 @@
   "author": "ThunderMiracle",
   "license": "MIT",
   "main": "index.js",
-  "packageManager": "pnpm@7.33.5",
+  "packageManager": "pnpm@7.33.7",
   "bugs": {
     "url": "https://github.com/thundermiracle/gatsby-remark-prismjs-copy-button/issues"
   },
@@ -29,9 +29,9 @@
     "@web-configs/eslint-plugin": "0.5.1",
     "@web-configs/prettier": "0.1.2",
     "@web-configs/typescript": "0.2.2",
-    "autoprefixer": "10.4.14",
+    "autoprefixer": "10.4.19",
     "eslint": "8.57.0",
-    "postcss": "8.4.27",
+    "postcss": "8.4.39",
     "prettier": "3.2.5",
     "tsup": "6.7.0",
     "typescript": "4.9.5",
