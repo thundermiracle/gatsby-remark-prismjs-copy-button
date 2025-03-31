@@ -29,7 +29,7 @@
     "@web-configs/eslint-plugin": "0.5.1",
     "@web-configs/prettier": "0.1.2",
     "@web-configs/typescript": "0.2.2",
-    "autoprefixer": "10.4.20",
+    "autoprefixer": "10.4.21",
     "eslint": "8.57.0",
     "postcss": "8.5.3",
     "prettier": "3.2.5",
