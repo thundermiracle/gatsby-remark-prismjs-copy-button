@@ -26,13 +26,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@web-configs/eslint-plugin": "0.5.1",
+    "@web-configs/eslint-plugin": "0.5.2",
     "@web-configs/prettier": "0.1.2",
     "@web-configs/typescript": "0.2.2",
     "autoprefixer": "10.4.24",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "postcss": "8.5.6",
-    "prettier": "3.2.5",
+    "prettier": "3.8.1",
     "tsup": "6.7.0",
     "typescript": "4.9.5",
     "unist-util-visit": "^4.1.2"
