@@ -4,7 +4,7 @@ specifiers:
   '@web-configs/eslint-plugin': 0.5.1
   '@web-configs/prettier': 0.1.2
   '@web-configs/typescript': 0.2.2
-  autoprefixer: 10.4.24
+  autoprefixer: 10.4.27
   eslint: 8.57.0
   postcss: 8.5.6
   prettier: 3.2.5
@@ -16,7 +16,7 @@ devDependencies:
   '@web-configs/eslint-plugin': 0.5.1_hxmrvexgp2zppq4idzqkw6aes4
   '@web-configs/prettier': 0.1.2
   '@web-configs/typescript': 0.2.2
-  autoprefixer: 10.4.24_postcss@8.5.6
+  autoprefixer: 10.4.27_postcss@8.5.6
   eslint: 8.57.0
   postcss: 8.5.6
   prettier: 3.2.5
@@ -1195,15 +1195,15 @@ packages:
     resolution: {integrity: sha512-eBvWn1lvIApYMhzQMsu9ciLfkBY499mFZlNqG+/9WR7PVlroQw0vG30cOQQbaKz3sCEc44TAOu2ykzqXSNnwag==}
     dev: true
 
-  /autoprefixer/10.4.24_postcss@8.5.6:
-    resolution: {integrity: sha512-uHZg7N9ULTVbutaIsDRoUkoS8/h3bdsmVJYZ5l3wv8Cp/6UIIoRDm90hZ+BwxUj/hGBEzLxdHNSKuFpn8WOyZw==}
+  /autoprefixer/10.4.27_postcss@8.5.6:
+    resolution: {integrity: sha512-NP9APE+tO+LuJGn7/9+cohklunJsXWiaWEfV3si4Gi/XHDwVNgkwr1J3RQYFIvPy76GmJ9/bW8vyoU1LcxwKHA==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.28.1
-      caniuse-lite: 1.0.30001766
+      caniuse-lite: 1.0.30001774
       fraction.js: 5.3.4
       picocolors: 1.1.1
       postcss: 8.5.6
@@ -1264,7 +1264,7 @@ packages:
     hasBin: true
     dependencies:
       baseline-browser-mapping: 2.9.11
-      caniuse-lite: 1.0.30001766
+      caniuse-lite: 1.0.30001774
       electron-to-chromium: 1.5.267
       node-releases: 2.0.27
       update-browserslist-db: 1.2.3_browserslist@4.28.1
@@ -1318,8 +1318,8 @@ packages:
       tslib: 2.6.0
     dev: true
 
-  /caniuse-lite/1.0.30001766:
-    resolution: {integrity: sha512-4C0lfJ0/YPjJQHagaE9x2Elb69CIqEPZeG0anQt9SIvIoOH4a4uaRl73IavyO+0qZh6MDLH//DrXThEYKHkmYA==}
+  /caniuse-lite/1.0.30001774:
+    resolution: {integrity: sha512-DDdwPGz99nmIEv216hKSgLD+D4ikHQHjBC/seF98N9CPqRX4M5mSxT9eTV6oyisnJcuzxtZy4n17yKKQYmYQOA==}
     dev: true
 
   /capital-case/1.0.4:
