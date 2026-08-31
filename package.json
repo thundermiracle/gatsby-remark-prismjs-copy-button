@@ -31,7 +31,7 @@
     "@web-configs/typescript": "0.2.2",
     "autoprefixer": "10.5.4",
     "eslint": "8.57.0",
-    "postcss": "8.5.25",
+    "postcss": "8.5.26",
     "prettier": "3.2.5",
     "tsup": "6.7.0",
     "typescript": "4.9.5",
